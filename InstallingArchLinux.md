@@ -285,3 +285,10 @@ umount /mnt/windows -l # Если пользовались grub
 umount /mnt -l
 reboot
 ```
+
+## Перезагружаемся
+Подключаемся к интернету, чтобы продолжить настройку системы:
+```bash
+nmcli device wifi list # Список сетей wifi
+nmcli device wifi connect "Имя_Сети" password "Пароль" # Подключение к wifi
+```
